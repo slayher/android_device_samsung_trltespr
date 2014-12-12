@@ -1,0 +1,6 @@
+# Radio
+rild.libpath=/system/lib/librilswitch.so
+rilswitch.vendorlibpath=/system/lib/libsec-ril.so
+rilswitch.cfilibpath=/system/lib/libcfiril.so
+ro.ril.telephony.mqanelements=6
+ro.telephony.ril_class=trlteRIL
