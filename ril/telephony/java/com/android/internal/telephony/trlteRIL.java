@@ -56,6 +56,11 @@ import com.android.internal.telephony.uicc.IccCardStatus;
  */
 public class trlteRIL extends RIL {
 
+    private Object mSMSLock = new Object();
+    private boolean mIsSendingSMS = false;
+    protected boolean isGSM = false;
+    public static final long SEND_SMS_TIMEOUT_IN_MS = 30000;
+
     private static final int RIL_REQUEST_DIAL_EMERGENCY = 10016;
     private static final int RIL_UNSOL_DEVICE_READY_NOTI = 11008;
     private static final int RIL_UNSOL_AM = 11010;
